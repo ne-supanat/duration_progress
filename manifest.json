@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "duration",
+    "version": "1.0",
+    "permissions": [
+        "storage"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "static/favicon.png",
+            "48": "static/favicon.png",
+            "128": "static/favicon.png"
+        }
+    }
+}

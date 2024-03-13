@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Duration Percentage</title>
+    <script src="popup.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="p-3">
+
+        <div class="flex justify-between">
+            <div class="flex-1">
+                <button id="day_btn">Day</button>
+            </div>
+            <div class="flex-1 ml-2">
+                <button id="week_btn">Week</button>
+            </div>
+            <div class="flex-1 mx-2">
+                <button id="month_btn">Month</button>
+            </div>
+            <div class="flex-1">
+                <button id="year_btn">Year</button>
+            </div>
+        </div>
+
+        <div class="m-2"></div>
+
+        <div class="flex">
+            <div id="percentage_text" class="text-md text-center text-black-800 mx-2">0%</div>
+            <div class="flex-1 w-full bg-gray-200 rounded-full dark:bg-gray-700 my-1">
+                <div id="percentage_bar" class="bg-blue-600 rounded-full" style="width: 0%; height: 100%;">
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-between">
+            <div class="flex-1">
+                <div class="bg-blue-600 rounded-full"></div>
+            </div>
+            <div class="flex-1 ml-2">
+                <div class="bg-blue-600 rounded-full"></div>
+            </div>
+            <div class="flex-1 ml-2">
+                <div class="bg-blue-600 rounded-full"></div>
+            </div>
+            <div class="flex-1 ml-2">
+                <div class="bg-blue-600 rounded-full"></div>
+            </div>
+            <div class="flex-1 ml-2">
+                <div class="bg-blue-600 rounded-full"></div>
+            </div>
+            <div class="flex-1 ml-2">
+                <div class="bg-blue-600 rounded-full"></div>
+            </div>
+            <div class="flex-1">
+                <div class="bg-blue-600 rounded-full"></div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
