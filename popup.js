@@ -8,9 +8,9 @@ const Durations = {
 const duration_pref_key = "duration_pref_key";
 
 const style_btn =
-  "flex w-full justify-center rounded-md px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 bg-indigo-300";
+  "flex w-full justify-center rounded-md px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-blue-500 bg-blue-300";
 const style_selected_btn =
-  "flex w-full justify-center rounded-md px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 bg-indigo-600";
+  "flex w-full justify-center rounded-md px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-blue-500 bg-blue-600";
 
 const style_step = "h-full bg-blue-200 rounded-full";
 const style_active_step = "h-full bg-blue-600 rounded-full";
@@ -145,8 +145,6 @@ function getDurationProgress(duration) {
       );
       return dayOfYear / lastDayOfYear;
     default:
-      break;
+      return 0;
   }
-
-  return Math.random();
 }

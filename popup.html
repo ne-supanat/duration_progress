@@ -4,9 +4,7 @@
 <head>
     <title>Duration Percentage</title>
     <script src="popup.js"></script>
-
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="./output.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -14,7 +12,7 @@
 
         <div class="flex justify-between">
             <div class="flex-1">
-                <button id="day_btn">Day</button>
+                <button id="day_btn" class="bg-midnight">Day</button>
             </div>
             <div class="flex-1 ml-2">
                 <button id="week_btn">Week</button>
@@ -31,8 +29,8 @@
 
         <div id="percentage_display">
             <div class="flex h-2.5 items-center">
-                <div id="percentage_text" class="text-md text-center text-black-800 mx-2">0%</div>
-                <div class="flex-1 w-full bg-gray-200 rounded-full dark:bg-gray-700 h-full">
+                <div id="percentage_text" class="text-md text-center text-blue-600 font-semibold mx-2">0%</div>
+                <div class="flex-1 w-full bg-gray-200 rounded-full dark:bg-gray-200 h-full">
                     <div id="percentage_bar" class="bg-blue-600 rounded-full h-full" style="width: 0%">
                     </div>
                 </div>
