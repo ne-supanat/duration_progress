@@ -20,7 +20,6 @@ console.log("This is a popup!");
 
 function main() {
   setup();
-  getDurationProgress();
 }
 
 function setup() {
@@ -40,7 +39,6 @@ function setup() {
       .getElementById("year_btn")
       .addEventListener("click", () => onSelectDuration(Durations.year));
 
-    //TODO: get saved type and load percentage
     const initialDurationType = localStorage.getItem(duration_pref_key);
     console.log(initialDurationType);
     if (initialDurationType) {
