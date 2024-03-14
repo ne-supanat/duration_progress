@@ -15,6 +15,8 @@ const style_selected_btn =
 const style_step = "h-full bg-blue-200 rounded-full";
 const style_active_step = "h-full bg-blue-600 rounded-full";
 
+let dayTimer;
+
 main();
 console.log("This is a popup!");
 
@@ -86,6 +88,8 @@ function resetStyleButton() {
 }
 
 function updateDisplay(duration) {
+  window.clearTimeout(dayTimer);
+
   if (duration == Durations.week) {
     document.getElementById("percentage_display").style.display = "none";
     document.getElementById("weekly_step").style.display = "block";
@@ -129,6 +133,12 @@ function getDurationProgress(duration) {
       const minutePass =
         (now - new Date(now.getFullYear(), now.getMonth(), now.getDate())) /
         86_400_000;
+
+      dayTimer = window.setTimeout(
+        () => updatePercentage(getDurationProgress(duration)),
+        (60 - now.getSeconds()) * 1000
+      );
+
       return minutePass;
     case Durations.week:
       console.log(now.getDay());

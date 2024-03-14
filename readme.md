@@ -1,4 +1,3 @@
 TODO:
 
-1. realtime update (every minute)
-2. icon
+1. icon
